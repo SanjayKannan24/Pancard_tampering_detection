@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pan Card Tampering</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Pan Card Tampering</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <form action="/" method="post" enctype="multipart/form-data">
+                <label>Upload the Image</label>
+                <br>
+                <input type="file" name="input_file" id="input_file"/>
+                <br>
+                <button type="submit" id="btn">Submit</button>
+            </form>
+
+            <div id="result">
+                <h4 id="output">{{pred}}</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
