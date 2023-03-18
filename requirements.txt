@@ -4,4 +4,4 @@ Flask~=2.2.3
 scikit-image~=0.20.0
 Pillow~=9.4.0
 gunicorn
-libGL
+libgl1
