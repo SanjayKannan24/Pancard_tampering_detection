@@ -4,4 +4,4 @@ Flask~=2.2.3
 scikit-image~=0.20.0
 Pillow~=9.4.0
 gunicorn
-libgl1-mesa-glx
+opencv-python-headless==4.2.0.32
