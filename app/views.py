@@ -62,13 +62,14 @@ def index():
         cv2.imwrite(os.path.join(app.config["GENERATED_FILE"], "diff.jpg"), diff)
         cv2.imwrite(os.path.join(app.config["GENERATED_FILE"], "threshold.jpg"), th)
 
+        output = ""
         if (round(score * 100, 2) < 70):
             output = "% Matched Hence, the card is tampered."
         else:
             output = "% Matched Hence, the card is real."
 
 
-        return render_template("index.html", pred=str(round(score * 100, 2)) + "% correct")
+        return render_template("index.html", pred=str(round(score * 100, 2)) + output)
 
 # Main Function
 if __name__ == "__main__":
